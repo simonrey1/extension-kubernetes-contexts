@@ -31,8 +31,6 @@ let contextsExtension: ContextsExtension;
 vi.mock(import('node:fs'));
 vi.mock(import('node:fs/promises'));
 vi.mock(import('@kubernetes/client-node'));
-vi.mock(import('./manager/contexts-manager'));
-vi.mock(import('./manager/dispatcher'));
 
 beforeEach(() => {
   vi.restoreAllMocks();
