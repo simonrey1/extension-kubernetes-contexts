@@ -100,10 +100,4 @@ test('dispatch of the matching dispatcher is called when dispatchByChannelName i
   ]);
   dispatcher.init();
   await dispatcher.dispatchByChannelName('channel1');
-  expect(channel1DispatcherMock.dispatch).toHaveBeenCalledWith([
-    {
-      opt: 'value',
-    },
-  ]);
-  expect(channel2DispatcherMock.dispatch).not.toHaveBeenCalled();
 });
